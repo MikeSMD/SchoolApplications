@@ -1,0 +1,37 @@
+﻿<Window x:Class="WPF_projekt.SkolaProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_projekt"
+        mc:Ignorable="d"
+        Title="SkolaProgram" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="65"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid ItemsSource="{Binding skolaProgramList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id školního programu" Binding="{Binding id_skola_program}"/>
+                <DataGridTextColumn Header="id školy" Binding="{Binding id_skoly}"/>
+                <DataGridTextColumn Header="id programu" Binding="{Binding id_programu}"/>
+                <DataGridTextColumn Header="počet míst" Binding="{Binding pocet_volnych_mist}"/>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation ="Horizontal">
+                                <Button Click="smazatProgramUSkoly"  Content="Smazat" Background="red" Foreground="white"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Click="pridatProgramKeSkole" Grid.Row="1" Content="přidat program ke škole"/>
+    </Grid>
+</Window>

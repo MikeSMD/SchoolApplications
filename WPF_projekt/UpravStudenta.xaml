@@ -1,0 +1,75 @@
+﻿<Window x:Class="WPF_projekt.UpravStudenta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_projekt"
+        mc:Ignorable="d"
+        Title="UpravStudenta" Height="405" Width="800">
+    <StackPanel Height="376" VerticalAlignment="Top">
+        <DockPanel>
+            <Label>jmeno:</Label>
+            <TextBox Text="{Binding jmeno}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>prijmeni:</Label>
+            <TextBox Text="{Binding prijmeni}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>mesto:</Label>
+            <TextBox Text="{Binding mesto}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>ulice:</Label>
+            <TextBox Text="{Binding ulice}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>psc:</Label>
+        <TextBox Text="{Binding psc}"/>
+        </DockPanel>
+
+
+        <DockPanel>
+            <Label>emaik:</Label>
+            <TextBox Text="{Binding email}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>misto narozeni:</Label>
+            <TextBox Text="{Binding misto_narozeni}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>datum narozeni:</Label>
+            <TextBox Text="{Binding datum_narozeni}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>statni obcanstvi:</Label>
+            <TextBox Text="{Binding statni_obcanstvi}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>rodne cislo:</Label>
+            <TextBox Text="{Binding rodne_cislo}"/>
+        </DockPanel>
+
+
+        <DockPanel>
+            <Label>stat:</Label>
+            <TextBox Text="{Binding stat}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>telefon:</Label>
+            <TextBox Text="{Binding telefon}"/>
+        </DockPanel>
+
+        <Button Click="Save" Content="Save"/>
+
+    </StackPanel>
+</Window>

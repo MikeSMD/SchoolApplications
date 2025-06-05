@@ -1,0 +1,13 @@
+CREATE TABLE stredni_skola(id_skoly INTEGER NOT NULL primary key,nazev VARCHAR2(50) NOT NULL,kraj VARCHAR2(35) NOT NULL,mesto VARCHAR2(50) NOT NULL,ulice VARCHAR2(50) NOT NULL,psc VARCHAR2(7) NOT NULL,typ VARCHAR2(50) NOT NULL,email VARCHAR2(75));
+
+CREATE TABLE student (id_studenta INTEGER primary key NOT NULL,jmeno VARCHAR2(85) NOT NULL,prijmeni VARCHAR2(95) NOT NULL,mesto VARCHAR2(55) NOT NULL,ulice VARCHAR2(95) NOT NULL,psc VARCHAR2(7) NOT NULL,email VARCHAR2(75) NOT NULL);
+
+CREATE TABLE studijni_program (id_programu INTEGER NOT NULL primary key,nazev VARCHAR2(35) NOT NULL,zkratka VARCHAR2(3) NOT NULL,popis VARCHAR2(500) NOT NULL);
+
+CREATE TABLE skola_program (id_skola_program INTEGER NOT NULL PRIMARY KEY,id_skoly INTEGER NOT NULL,id_programu INTEGER NOT NULL, pocet_volnych_mist INTEGER NOT NULL,FOREIGN KEY (id_skoly) REFERENCES stredni_skola(id_skoly),FOREIGN KEY (id_programu) REFERENCES studijni_program(id_programu));
+
+
+
+CREATE TABLE prihlaska (id_prihlasky INTEGER primary key NOT NULL,id_studenta INTEGER NOT NULL,id_skola_program integer null,id_skola_program1 integer null,id_skola_program2 integer null,foreign key (id_studenta) references student(id_studenta),foreign key (id_skola_program) references skola_program(id_skola_program),foreign key (id_skola_program1) references skola_program(id_skola_program),foreign key (id_skola_program2) references skola_program(id_skola_program),UNIQUE(id_skola_program2, id_skola_program1, id_skola_program));
+
+CREATE TABLE student (id_studenta INTEGER primary key NOT NULL,jmeno VARCHAR2(85) NOT NULL,prijmeni VARCHAR2(95) NOT NULL,misto_narozeni VARCHAR2(65) NOT NULL, datum_narozeni VARCHAR2(21) NOT NULL, statni_obcanstvi VARCHAR2(65) NOT NULL, rodne_cislo VARCHAR2(15) NOT NULL, mesto VARCHAR2(55) NOT NULL,ulice VARCHAR2(95) NOT NULL,psc VARCHAR2(7) NOT NULL,stat VARCHAR2(65) NOT NULL ,email VARCHAR2(75) NOT NULL, telefon VARCHAR2(17));

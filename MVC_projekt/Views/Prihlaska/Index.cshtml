@@ -1,0 +1,201 @@
+﻿@model PrihlaskaForm
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style>
+    div{
+        margin-bottom:25px;
+    }
+
+    .class{
+        background-color: lightgrey;
+        padding: 25px;
+    }
+
+    input{
+        margin-right:25px;
+    }
+
+    .button{
+        background-color: blue;
+        color: white;
+    }
+
+    #skolyInput, #skolyInput1, #skolyInput2{
+        width:500px;
+    }
+
+    #skoly1 li, #skoly2 li, #skoly li{
+        background-color: white;
+        padding: 5px;
+        border-bottom: 1px solid gray;
+    }
+</style>
+
+
+<script>
+    $(document).ready(function () {
+        $("#skolyInput").on("input", function () {
+            var hledanaSkola = $(this).val();
+
+            $.ajax({
+                url: "@Url.Action("vyhledejSkoly")",
+                data: { hledanaSkola: hledanaSkola },
+                type: 'GET',
+                success: function (data) {
+                    $("#skoly").empty();
+                    data.forEach(function (skola) {
+                        $("#skoly").append('<li data-id="' + skola.id_skoly + '">' + skola.text + '</li>')
+                    });
+                }
+            });
+        });
+
+        $("#skolyInput1").on("input", function () {
+            var hledanaSkola = $(this).val();
+
+            $.ajax({
+                url: "@Url.Action("vyhledejSkoly")",
+                data: { hledanaSkola: hledanaSkola },
+                type: 'GET',
+                success: function (data) {
+                    $("#skoly1").empty();
+                    data.forEach(function (skola) {
+                        $("#skoly1").append('<li data-id="' + skola.id_skoly + '">' + skola.text + '</li>')
+                    });
+                }
+            });
+        });
+
+        $("#skolyInput2").on("input", function () {
+            var hledanaSkola = $(this).val();
+
+            $.ajax({
+                url: "@Url.Action("vyhledejSkoly")",
+                data: { hledanaSkola: hledanaSkola },
+                type: 'GET',
+                success: function (data) {
+                    $("#skoly2").empty();
+                    data.forEach(function (skola) {
+                        $("#skoly2").append('<li data-id="' + skola.id_skoly + '">' + skola.text + '</li>')
+                    });
+                }
+            });
+        });
+
+        $(document).on('click', '#skoly li', function () {
+            var selectedSchool = $(this).text();
+            $('#skolyInput').val(selectedSchool);
+            $('#skoly').empty();
+            
+            $('#skolyInput1').removeAttr('hidden')
+            $('#vyber1').removeAttr('hidden')
+        });
+
+         $(document).on('click', '#skoly1 li', function () {
+            var selectedSchool = $(this).text();
+            $('#skolyInput1').val(selectedSchool);
+            $('#skoly1').empty();
+
+            $('#skolyInput2').removeAttr('hidden')
+            $('#vyber2').removeAttr('hidden')
+        });
+
+        $(document).on('click', '#skoly2 li', function () {
+            var selectedSchool = $(this).text();
+            $('#skolyInput2').val(selectedSchool);
+            $('#skoly2').empty();
+        });
+    });
+</script>
+
+
+@using (Html.BeginForm())
+{
+    <div class="class">
+    <h3>osobní údaje</h3>
+    <div>
+        @Html.LabelFor(x=>x.jmeno)<span style="color: red">*</span>
+        @Html.TextBoxFor(x=>x.jmeno)
+        @Html.ValidationMessageFor(x=>x.jmeno)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.prijmeni)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.prijmeni)
+        @Html.ValidationMessageFor(x => x.prijmeni)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.misto_narozeni)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.misto_narozeni)
+        @Html.ValidationMessageFor(x => x.misto_narozeni)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.datum_narozeni)<span style="color: red">*</span>
+            <input data-val="true" data-val-required="The datum_narozeni field is required." id="datum_narozeni" name="datum_narozeni" type="date" value="" />
+        @Html.ValidationMessageFor(x => x.datum_narozeni)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.statni_obcanstvi)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.statni_obcanstvi)
+        @Html.ValidationMessageFor(x => x.statni_obcanstvi)
+    </div>
+
+    <div>
+        @Html.LabelFor(x => x.rodne_cislo)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.rodne_cislo)
+        @Html.ValidationMessageFor(x => x.rodne_cislo)
+    </div>
+    </div>
+    <div class="class">
+        <h3>bydliště</h3>
+        @Html.LabelFor(x => x.mesto)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.mesto)
+        @Html.ValidationMessageFor(x => x.mesto)
+
+        @Html.LabelFor(x => x.ulice)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.ulice)
+        @Html.ValidationMessageFor(x => x.ulice)
+
+        @Html.LabelFor(x => x.psc)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.psc)
+        @Html.ValidationMessageFor(x => x.psc)
+
+        @Html.LabelFor(x => x.stat)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.stat)
+        @Html.ValidationMessageFor(x => x.stat)
+    </div>
+
+    <div class="class">
+        <h3> kontakt </h3>
+        @Html.LabelFor(x => x.email)<span style="color: red">*</span>
+        @Html.TextBoxFor(x => x.email)
+        @Html.ValidationMessageFor(x => x.email)
+
+        @Html.LabelFor(x => x.telefonni_cislo)
+        @Html.TextBoxFor(x => x.telefonni_cislo)
+        @Html.ValidationMessageFor(x => x.telefonni_cislo)
+    </div>
+
+
+    <div class="class">
+        <h3>Vybrání studijních programů</h3>
+
+        <Label id="vyber"> vyber školu:<span style="color: red">*</span> </Label>
+        <input type="text" id="skolyInput" name="id_skola_program1" width="200" />
+        <ul id="skoly"></ul>
+        <Label id="vyber1" hidden> vyber školu:</Label>
+        <input type="text" id="skolyInput1" name="id_skola_program2" hidden />
+        <ul id="skoly1"></ul>
+        <Label id="vyber2" hidden> vyber školu:</Label>
+        <input data-val="true" type="text" id="skolyInput2" name="id_skola_program3" hidden />
+        <ul id="skoly2"></ul>
+
+    </div>
+
+    <button class="button" type="submit">Potvrdit</button>
+
+}

@@ -1,0 +1,45 @@
+﻿<Window x:Class="WPF_projekt.StredniSkoly"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_projekt"
+        mc:Ignorable="d"
+        Title="StredniSkoly" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="65"/>
+        </Grid.RowDefinitions>
+        
+        <DataGrid ItemsSource="{Binding skoly}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="nazev" Binding="{Binding nazev}"/>
+                <DataGridTextColumn Header="typ" Binding="{Binding typ}"/>
+                <DataGridTextColumn Header="kraj" Binding="{Binding kraj}"/>
+                <DataGridTextColumn Header="mesto" Binding="{Binding mesto}"/>
+                <DataGridTextColumn Header="ulice" Binding="{Binding ulice}"/>
+                <DataGridTextColumn Header="psc" Binding="{Binding psc}"/>
+                <DataGridTextColumn Header="email" Binding="{Binding email}"/>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation ="Horizontal">
+                                <Button Click="VymazSkolu" Content="Smazat" Background="red" Foreground="white"/>
+                                <Button Click="UpravitSkolu" Content="Upravit" Background="Blue" Foreground="White"/>
+                                <Button Click="ZobrazProgramy" Content="Programy školy" Background="Green" Foreground="White"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                 
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="1">
+            <Button Click="PridatSkolu" Content="přidat střední školu" Height="45"/>
+            <Button Click="ZobrazStudijniProgramy" Content="Správa programů"/>
+        </StackPanel>
+    </Grid>
+</Window>

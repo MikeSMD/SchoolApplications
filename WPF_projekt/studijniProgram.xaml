@@ -1,0 +1,38 @@
+﻿<Window x:Class="WPF_projekt.studijniProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_projekt"
+        mc:Ignorable="d"
+        Title="studijniProgram" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="65"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid ItemsSource="{Binding programList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id programu" Binding="{Binding id_programu}"/>
+                <DataGridTextColumn Header="název" Binding="{Binding nazev}"/>
+                <DataGridTextColumn Header="zkratka" Binding="{Binding zkratka}"/>
+                <DataGridTextColumn Header="popis" Binding="{Binding popis}"/>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation ="Horizontal">
+                                <Button Click="smazStudijniProgram" Content="Smazat" Background="red" Foreground="white"/>
+                                <Button Click="editStudijniProgram" Content="Upravit" Background="blue" Foreground="white"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Click="pridejStudijniProgram" Grid.Row="1" Content="přidat studijní program"/>
+    </Grid>
+</Window>

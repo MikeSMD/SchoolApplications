@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|c:\\users\\nedri\\onedrive\\plocha\\csharp_projekt\\mvc_projekt\\controllers\\prihlaskacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|solutionrelative:controllers\\prihlaskacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|c:\\users\\nedri\\onedrive\\plocha\\csharp_projekt\\mvc_projekt\\models\\prihlaskaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|solutionrelative:models\\prihlaskaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|c:\\users\\nedri\\onedrive\\plocha\\csharp_projekt\\mvc_projekt\\views\\prihlaska\\odeslano.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|solutionrelative:views\\prihlaska\\odeslano.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|c:\\users\\nedri\\onedrive\\plocha\\csharp_projekt\\mvc_projekt\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|c:\\users\\nedri\\onedrive\\plocha\\csharp_projekt\\mvc_projekt\\views\\prihlaska\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|solutionrelative:views\\prihlaska\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|c:\\users\\nedri\\onedrive\\plocha\\csharp_projekt\\mvc_projekt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|c:\\users\\nedri\\onedrive\\plocha\\csharp_projekt\\mvc_projekt\\models\\prihlaska.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78094A45-2105-4515-9B1D-822DB6632FF4}|MVC_projekt.csproj|solutionrelative:models\\prihlaska.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Prihlaska.cs",
+              "DocumentMoniker": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Models\\Prihlaska.cs",
+              "RelativeDocumentMoniker": "Models\\Prihlaska.cs",
+              "ToolTip": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Models\\Prihlaska.cs",
+              "RelativeToolTip": "Models\\Prihlaska.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T16:12:02.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T12:49:30.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "odeslano.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Views\\Prihlaska\\odeslano.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prihlaska\\odeslano.cshtml",
+              "ToolTip": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Views\\Prihlaska\\odeslano.cshtml",
+              "RelativeToolTip": "Views\\Prihlaska\\odeslano.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T12:37:14.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Views\\Prihlaska\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Prihlaska\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Views\\Prihlaska\\Index.cshtml",
+              "RelativeToolTip": "Views\\Prihlaska\\Index.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAMEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-20T15:04:34.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrihlaskaForm.cs",
+              "DocumentMoniker": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Models\\PrihlaskaForm.cs",
+              "RelativeDocumentMoniker": "Models\\PrihlaskaForm.cs",
+              "ToolTip": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Models\\PrihlaskaForm.cs",
+              "RelativeToolTip": "Models\\PrihlaskaForm.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwEwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T14:45:03.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T14:43:44.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrihlaskaController.cs",
+              "DocumentMoniker": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Controllers\\PrihlaskaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrihlaskaController.cs",
+              "ToolTip": "C:\\Users\\Nedri\\OneDrive\\Plocha\\Csharp_projekt\\MVC_projekt\\Controllers\\PrihlaskaController.cs",
+              "RelativeToolTip": "Controllers\\PrihlaskaController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAiwFMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T14:40:53.732Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

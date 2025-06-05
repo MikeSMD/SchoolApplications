@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_projekt.PridatProgramKeSkole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_projekt"
+        mc:Ignorable="d"
+        Title="PridatProgramKeSkole" Height="152" Width="800">
+    <StackPanel Height="230" VerticalAlignment="Top">
+        <DockPanel>
+            <Label>id programu školy:</Label>
+            <TextBox Text="{Binding id_skola_program}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>id_programu:</Label>
+            <TextBox Text="{Binding id_programu}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>počet míst:</Label>
+            <TextBox Text="{Binding pocet_volnych_mist}"/>
+        </DockPanel>
+
+        <Button Click="Ulozit" Content="Uložit"/>
+
+    </StackPanel>
+</Window>

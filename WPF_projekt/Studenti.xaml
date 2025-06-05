@@ -1,0 +1,44 @@
+﻿<Window x:Class="WPF_projekt.Studenti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_projekt"
+        mc:Ignorable="d"
+        Title="Studenti" Height="479" Width="800">
+    <Grid Margin="0,0,0,35">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="65"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid ItemsSource="{Binding studenti}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" Grid.RowSpan="2" Margin="0,0,0,-33">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id studenta" Binding="{Binding id_studenta}"/>
+                <DataGridTextColumn Header="jmeno" Binding="{Binding jmeno}"/>
+                <DataGridTextColumn Header="prijmeni" Binding="{Binding prijmeni}"/>
+                <DataGridTextColumn Header="mesto" Binding="{Binding mesto}"/>
+                <DataGridTextColumn Header="ulice" Binding="{Binding ulice}"/>
+                <DataGridTextColumn Header="psc" Binding="{Binding psc}"/>
+                <DataGridTextColumn Header="email" Binding="{Binding email}"/>
+                <DataGridTextColumn Header="misto narozeni" Binding="{Binding misto_narozeni}"/>
+                <DataGridTextColumn Header="datum narození" Binding="{Binding datum_narozeni}"/>
+                <DataGridTextColumn Header="statni obcanstvi" Binding="{Binding statni_obcanstvi}"/>
+                <DataGridTextColumn Header="rodne cislo" Binding="{Binding rodne_cislo}"/>
+                <DataGridTextColumn Header="stat" Binding="{Binding stat}"/>
+                <DataGridTextColumn Header="telefon" Binding="{Binding telefon}"/>
+
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation ="Horizontal">
+                                <Button Click="smazatStudenta" Content="Smazat" Background="red" Foreground="white"/>
+                                <Button Click="editStudent" Content="Upravit" Background="Blue" Foreground="White"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

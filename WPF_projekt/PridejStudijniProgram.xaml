@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF_projekt.PridejStudijniProgram"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_projekt"
+        mc:Ignorable="d"
+        Title="PridejStudijniProgram" Height="450" Width="800">
+    <StackPanel Height="230" VerticalAlignment="Top">
+        <DockPanel>
+            <Label>id programu</Label>
+            <TextBox Text="{Binding id_programu}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>nazev:</Label>
+            <TextBox Text="{Binding nazev}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>zkratka:</Label>
+            <TextBox Text="{Binding zkratka}"/>
+        </DockPanel>
+
+        <DockPanel>
+            <Label>popis:</Label>
+            <TextBox Text="{Binding popis}"/>
+        </DockPanel>
+
+        <Button Click="Ulozit" Content="Uložit"/>
+
+    </StackPanel>
+</Window>

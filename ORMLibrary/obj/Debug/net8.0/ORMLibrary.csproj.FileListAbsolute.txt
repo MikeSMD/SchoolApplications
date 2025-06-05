@@ -1,0 +1,12 @@
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\bin\Debug\net8.0\ORMLibrary.deps.json
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\bin\Debug\net8.0\ORMLibrary.dll
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\bin\Debug\net8.0\ORMLibrary.pdb
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ORMLibrary.csproj.AssemblyReference.cache
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ORMLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ORMLibrary.AssemblyInfoInputs.cache
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ORMLibrary.AssemblyInfo.cs
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ORMLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ORMLibrary.dll
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\refint\ORMLibrary.dll
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ORMLibrary.pdb
+C:\Users\Nedri\OneDrive\Plocha\Csharp_projekt\ORMLibrary\obj\Debug\net8.0\ref\ORMLibrary.dll
